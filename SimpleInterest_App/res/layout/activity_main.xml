@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+ >
+    <ImageView
+        android:src="@drawable/bgd"
+        android:id="@+id/im1"
+        android:scaleType="fitXY"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+    <TextView
+        android:id="@+id/lblbanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:text="SIMPLE INTEREST CALCULATOR"
+        android:textSize="20dp"
+        android:textColor="#170F04"
+      />
+
+    <TextView
+        android:id="@+id/lblpriciple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblbanner"
+        android:text="Principle Amount"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/tbpriciple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:inputType="phone"
+        android:layout_below="@+id/lblpriciple"
+        android:textColor="@color/white"
+ />
+    <TextView
+        android:id="@+id/lbltime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbpriciple"
+        android:text="Time (In Years)"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/tbtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:inputType="phone"
+        android:layout_below="@+id/lbltime"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:id="@+id/lblrate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbtime"
+        android:text="Rate in %"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/tbrate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:inputType="phone"
+        android:layout_below="@+id/lblrate"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/btncalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="135dp"
+        android:text="Calculate"
+        android:layout_below="@+id/tbrate"
+        android:layout_centerInParent="true"
+        android:onClick="Calculate"
+        />
+
+
+
+
+
+
+
+
+</RelativeLayout>
