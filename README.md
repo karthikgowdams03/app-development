@@ -1,4 +1,4 @@
 # app-development
-intro wil be updated Soon
+intro will be updated Soon
 
 © 2022 Karthik Gowda M S
