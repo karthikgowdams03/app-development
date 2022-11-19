@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/nie">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTRATION FORM"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/welcome"
+        android:textColor="#E91E63"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/lblnm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Name"
+
+        android:textColor="#FF5722"
+        android:textSize="18dp" />
+    <EditText
+        android:id="@+id/tbnm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:textColorHint="@color/white"
+        android:inputType="textPersonName"
+        android:backgroundTint="@android:color/white"
+        android:layout_below="@+id/lblnm"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/lblusn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbnm"
+        android:text="USN"
+        android:layout_marginLeft="8dp"
+        android:textSize="20dp"
+        android:textColor="#FF5722"/>
+
+
+    <EditText
+        android:id="@+id/tbusn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblusn"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@android:color/white"
+        android:hint="Enter USN"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <TextView
+        android:id="@+id/lblemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbusn"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        android:text="E-Mail"
+        android:textColor="#FF5722"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/tbemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblemail"
+        android:inputType="textEmailAddress"
+        android:hint="Enter E-mail"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+
+
+        android:layout_marginBottom="10dp"/>
+
+
+    <TextView
+        android:id="@+id/lblph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbemail"
+        android:text="Phone"
+        android:layout_marginStart="8dp"
+        android:textSize="20sp"
+        android:textColor="#FF5722"/>
+    <EditText
+        android:id="@+id/tbph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblph"
+        android:inputType="textPersonName"
+        android:hint="Enter Phone"
+        android:textColor="@color/white"
+        android:backgroundTint="@android:color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/lbldept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbph"
+        android:text="Department"
+        android:layout_marginStart="8dp"
+        android:textSize="20sp"
+        android:textColor="#FF5722"/>
+    <EditText
+        android:id="@+id/tbdept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbldept"
+        android:inputType="textPersonName"
+        android:hint="Enter Department"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:backgroundTint="@android:color/white"
+        android:layout_marginBottom="10dp"/>
+
+
+
+    <TextView
+        android:id="@+id/lblpswd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbdept"
+        android:text="Password"
+        android:textColor="#FF5722"
+        android:layout_marginLeft="8dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/tbpswd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/lblpswd"
+        android:hint="Enter Password"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@android:color/white"/>
+
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="154dp"
+        android:layout_marginBottom="35dp"
+        android:text="save"
+        android:layout_centerInParent="true"
+        android:onClick="Save"
+        android:backgroundTint="#E91E63"/>
+</RelativeLayout>
