@@ -30,11 +30,9 @@ public class MainActivity extends AppCompatActivity {
 
         float n1 = Float.parseFloat(num1.getText().toString());
         float n2 = Float.parseFloat(num2.getText().toString());
-        if (n1 > n2) {
-            ans = n1 - n2;
-        } else {
-            ans = n2 - n1;
-        }
+       
+            ans = n1-n2;
+        
         Toast.makeText(getApplicationContext(), "Answer = " + ans + "\n" + "Thank you", Toast.LENGTH_SHORT).show();
     }
 
