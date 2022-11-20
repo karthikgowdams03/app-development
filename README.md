@@ -1,3 +1,4 @@
 # app-development
 
-© 2022 Karthik Gowda M S
+Four different applications were developed using Android Studio. 
+
